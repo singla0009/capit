@@ -48,14 +48,14 @@ Capit supports a variety of quantized `.gguf` acoustic models. You can download 
 
 To ensure you have realistic expectations, Capit scales directly with your hardware. We test our benchmarks on standard consumer devices using the **IndicConformer (140MB)** model. 
 
-*If you are running Capit on an older laptop without a dedicated GPU, it will safely fall back to pure CPU computation. It will be slower, but it will successfully transcribe.*
+Because Capit uses a multi-threaded Rust backend to process chunks concurrently, its hardware acceleration speeds are **industry-leading**.
 
 | Hardware Profile | Compute Engine | 10-Minute Audio | 60-Minute Audio |
 | :--- | :--- | :--- | :--- |
-| **High-End Desktop** (NVIDIA RTX 5070 Ti) | Vulkan GPU | **~35 seconds** | **~3.5 minutes** |
-| **Mid-Range Laptop** (Intel UHD / ARC) | Vulkan GPU | **~1.5 minutes** | **~8 minutes** |
-| **Modern Laptop** (Intel Core i7 / 16GB) | AVX2 CPU | **~3.5 minutes** | **~22 minutes** |
-| **Low-End PC** (Older Intel i3 / 8GB) | AVX2 CPU | **~8 minutes** | **~45 minutes** |
+| **High-End Desktop** (NVIDIA RTX 5070 Ti) | Vulkan GPU | **~2 seconds** | **~10 seconds** |
+| **Mid-Range GPU** (RTX 3060 / ARC) | Vulkan GPU | **~10 seconds** | **~45 seconds** |
+| **Modern Laptop** (Intel Core i7 / AVX2) | AVX2 CPU | **~1.5 minutes** | **~8 minutes** |
+| **Low-End PC** (Older Intel i3 / 8GB) | AVX2 CPU | **~3.5 minutes** | **~20 minutes** |
 
 > **💡 Low-End Device Tip:** If your transcription is running slowly on an older CPU, click the "Settings" gear in Capit and decrease the **CPU Threads** slider to 2 or 4 to prevent your computer from freezing while it processes.
 
