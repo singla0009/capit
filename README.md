@@ -19,10 +19,11 @@
 
 <div align="center">
   <h3>🎬 See Capit in Action</h3>
+</div>
 
-  <video src="https://github.com/singla0009/capit/raw/main/assets/capit-demo.mp4" controls muted style="max-width: 100%;"></video>
+https://github.com/singla0009/capit/raw/main/assets/capit-demo.mp4
 
-  <br />
+<div align="center">
   <sub>Drop a file → pick a model → get subtitles. That's it.</sub>
 </div>
 
