@@ -300,7 +300,7 @@ async fn check_models(app: tauri::AppHandle) -> Result<ModelStatus, AppError> {
                         let size_mb = fs::metadata(&path).map(|m| m.len() as f64 / 1_048_576.0).unwrap_or(0.0);
                         models.push(ModelInfo {
                             id: filename.clone(),
-                            name: "Custom / Local GGUF".to_string(),
+                            name: filename.clone(),
                             filename: filename.clone(),
                             exists: true,
                             path: path.to_string_lossy().to_string(),
