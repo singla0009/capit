@@ -2,8 +2,8 @@
 
 <div align="center">
 
-  # Capit 🎙️
-  ### Blazingly Fast Local Subtitles & Captions — One-Click Install, 25+ Languages
+  # RenderCaption 🎙️
+  ### (Speech to Text) Blazingly Fast Local Subtitles & Captions — One-Click Install, 25+ Languages
 
   [![Tauri](https://img.shields.io/badge/Tauri-v2-24C8DB?style=for-the-badge&logo=tauri&logoColor=FFFFFF)](https://tauri.app/)
   [![Rust](https://img.shields.io/badge/Rust-Backend-000000?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
@@ -12,7 +12,7 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
   <p>
-    Capit is a <b>one-click install</b> desktop app that generates subtitles, captions, and transcriptions from any audio or video file — <b>entirely offline</b> on your own machine. It supports <b>25+ languages</b> including Hindi, Hinglish, Punjabi, English, French, Japanese, and more. Powered by local AI models via <a href="https://github.com/mudler/parakeet-cpp">parakeet-cpp</a> (GGML), with hardware acceleration across NVIDIA, AMD, and Intel GPUs.
+    RenderCaption is a <b>one-click install</b> desktop app that generates subtitles, captions, and transcriptions from any audio or video file — <b>entirely offline</b> on your own machine. It supports <b>25+ languages</b> including Hindi, Hinglish, Punjabi, English, French, Japanese, and more. Powered by local AI models via <a href="https://github.com/mudler/parakeet-cpp">parakeet-cpp</a> (GGML), with hardware acceleration across NVIDIA, AMD, and Intel GPUs.
   </p>
 
   **TL;DR — Transcribe 1 hour of audio in ~10 seconds on an RTX 5070 Ti. Export to SRT subtitles instantly. No cloud, no API keys, free forever.**
@@ -20,7 +20,7 @@
 </div>
 
 <div align="center">
-  <h3>🎬 See Capit in Action</h3>
+  <h3>🎬 See RenderCaption in Action</h3>
 </div>
 
 https://github.com/user-attachments/assets/f0633a64-3d0f-4393-a8a4-77f4c061701e
@@ -35,7 +35,7 @@ https://github.com/user-attachments/assets/f0633a64-3d0f-4393-a8a4-77f4c061701e
 
 1. Download the latest installer from the **[Releases Page](../../releases/latest)**.
 2. Run the `.exe` or `.msi` installer.
-3. Open Capit → download a model from the Model Manager → drop your audio file → click **Transcribe**.
+3. Open RenderCaption → download a model from the Model Manager → drop your audio file → click **Transcribe**.
 
 That's it. No Python, no Docker, no API keys.
 
@@ -64,13 +64,13 @@ All models are downloaded on-demand through the in-app Model Manager. They are q
 | `rnnt-1.1b-q4` | Parakeet RNNT 1.1B (Q4) | `rnnt-1.1b-q4_k_m.gguf` | 25+ Languages (EN, FR, JA…) | ~1.3 GB |
 | `eu-fast` | Parakeet TDT 0.6B (Q4) | `parakeet-tdt-0.6b-v3-q4_k.gguf` | 25+ Languages (EN, FR, JA…) | ~800 MB |
 
-You can also drop any compatible `.gguf` model into the `models/` folder and Capit will auto-detect it as a **Custom / Local GGUF** model.
+You can also drop any compatible `.gguf` model into the `models/` folder and RenderCaption will auto-detect it as a **Custom / Local GGUF** model.
 
 ---
 
 ## 📊 Performance Benchmarks
 
-Benchmarks below were measured on a real Windows desktop using the `hinglish-conformer-ctc.f32.gguf` model. Capit splits audio into 30-second chunks and processes them concurrently via a multi-threaded Rust backend.
+Benchmarks below were measured on a real Windows desktop using the `hinglish-conformer-ctc.f32.gguf` model. RenderCaption splits audio into 30-second chunks and processes them concurrently via a multi-threaded Rust backend.
 
 ### GPU Benchmarks (Vulkan)
 
@@ -98,7 +98,7 @@ Tested with `parakeet-cli` (CPU-only binary). Thread count controlled via in-app
 | Intel Core i5-10400 | 4 | ~3.5 min | ~20 min | ~3x real-time |
 | Intel Core i3-8100 | 2 | ~8 min | ~45 min | ~1.3x real-time |
 
-> **💡 Tip for low-end hardware:** If Capit is freezing your computer during transcription, open Settings and lower the **CPU Threads** slider to 2. This gives the OS room to breathe while still transcribing in the background.
+> **💡 Tip for low-end hardware:** If RenderCaption is freezing your computer during transcription, open Settings and lower the **CPU Threads** slider to 2. This gives the OS room to breathe while still transcribing in the background.
 
 ---
 
@@ -121,8 +121,8 @@ Tested with `parakeet-cli` (CPU-only binary). Thread count controlled via in-app
 
 ### Development
 ```bash
-git clone https://github.com/singla0009/capit.git
-cd capit
+git clone https://github.com/singla0009/rendercaption.git
+cd rendercaption
 npm install
 npm run tauri dev
 ```

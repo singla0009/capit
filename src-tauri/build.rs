@@ -1,4 +1,4 @@
-// Capit v0.1.0 — restored original icons
+// RenderCaption v0.1.0 — restored original icons
 use std::env;
 use std::fs;
 use std::path::PathBuf;

@@ -1,8 +1,24 @@
 {
-  "name": "capit",
+  "name": "rendercaption",
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "keywords": [
+    "subtitles",
+    "captions",
+    "caption-generator",
+    "subtitle-generator",
+    "speech-to-text",
+    "offline-ai",
+    "transcription",
+    "gguf",
+    "rust",
+    "free",
+    "open-source",
+    "foss",
+    "whisper",
+    "auto-subs"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

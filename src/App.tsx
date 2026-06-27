@@ -98,7 +98,7 @@ function App() {
     });
     if (selected && typeof selected === "string") {
       try {
-        appLog(`[IMPORT] Copying custom model to Capit directory...`);
+        appLog(`[IMPORT] Copying custom model to RenderCaption directory...`);
         const filename = await invoke<string>("import_custom_model", { filePath: selected });
         appLog(`[IMPORT] Successfully imported ${filename}!`);
         await refreshModels();
@@ -201,7 +201,7 @@ function App() {
       {/* Top Toolbar */}
       <div className="toolbar">
         <div className="toolbar-left">
-          <div className="app-title">Capit (Multilingual)</div>
+          <div className="app-title">RENDERCAPTION</div>
           <div style={{width: '1px', height: '16px', background: 'var(--border-dim)'}}></div>
           
           <div style={{display: 'flex', alignItems: 'center', gap: '4px'}}>
