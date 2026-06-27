@@ -121,7 +121,7 @@ Tested with `parakeet-cli` (CPU-only binary). Thread count controlled via in-app
 
 ### Development
 ```bash
-git clone https://github.com/singla0009/rendercaption.git
+git clone https://github.com/AnshSinglaDev/rendercaption.git
 cd rendercaption
 npm install
 npm run tauri dev

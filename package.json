@@ -19,6 +19,14 @@
     "whisper",
     "auto-subs"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnshSinglaDev/rendercaption.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnshSinglaDev/rendercaption/issues"
+  },
+  "homepage": "https://github.com/AnshSinglaDev/rendercaption#readme",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

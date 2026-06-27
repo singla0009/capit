@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "RenderCaption - Offline AI Speech to Text & Subtitle Generator"
 authors = ["you"]
 edition = "2021"
-repository = "https://github.com/singla0009/rendercaption"
+repository = "https://github.com/AnshSinglaDev/rendercaption"
 keywords = ["subtitles", "captions", "speech-to-text", "gguf", "offline", "free", "open-source", "foss", "whisper", "auto-subs"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
